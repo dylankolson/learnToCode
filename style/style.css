@@ -12,6 +12,17 @@ hr {
 h1, h2, h3 {
 	color: #60AC90;
 }
+table {
+	border: 0;
+	border-collapse: collapse;
+}
+table td, table th {
+	padding: 0.3em;
+	vertical-align: top;
+}
+table tbody tr.striped {
+	background-color: #CFE1D0;
+}
 #sitewrapper {
 	width: 930px;
 	margin: 15px auto 0;
@@ -95,15 +106,4 @@ h1, h2, h3 {
 .bigButton:hover {
 	background-color: #738A84;
 	border: 1px solid #2D3037;
-}
-table {
-	border: 0;
-	border-collapse: collapse;
-}
-table td, table th {
-	padding: 0.3em;
-	vertical-align: top;
-}
-table tbody tr.striped {
-	background-color: #CFE1D0;
 }
