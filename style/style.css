@@ -9,6 +9,9 @@ hr {
 	clear: both;
 	margin: 1em 0;
 }
+h1, h2, h3 {
+	color: #60AC90;
+}
 #sitewrapper {
 	width: 930px;
 	margin: 15px auto 0;
