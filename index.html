@@ -7,34 +7,183 @@
 	<meta http-equiv="content-type" content="text/html; charset=utf-8">
 
 	<title>ACES' Learn to Code Store</title>
+
+	<link rel="stylesheet" type="text/css" href="style/style.css" />
+	<script src="js/javascript.js"></script>
 </head>
 
 <body>
-	<script src="js/javascript.js"></script>
-<h1>Plain Colored T-Shirts </h1>
-<!-- May want to change to a div -->
-<p id="desc">Description goes here </p>
-<img src="images/shirts.jpg" alt="Smiley face" height="175" width="175">
+<div id="sitewrapper">
+	<div id="header">
+		<a href="index.html" id="logo"><img src="images/logo.png" width="280" /></a>
+	</div><!--END #header-->
+	<div id="content">
+		<div id="product">
+			<div class="onethird">
+				<img src="images/shirts.jpg" alt="Smiley face" height="175" width="175">
+			</div>
+			<div class="twothird">
+				<h1>Plain Colored T-Shirts </h1>
 
-<form id="addToCart">
-Number of shirts:<input type="text" id="num"> </input> <br>
-Color:
-<select id="color">
- <option value="orange">Orange</option>
- <option value="blue">Blue</option>
- <option value="green">Green</option>
- <option value="yellow">Yellow</option>
-</select> <br>
+				<form id="addToCart">
+					<p id="price">$14.99</p>
+					<p>
+						<label for="num">Number of shirts:</label>
+						<input type="text" id="num" name="num" />
+					</p>
+					<p>
+						<label for="color">Color:</label>
+						<select id="color" name="color">
+					 		<option value="orange">Orange</option>
+					 		<option value="blue">Blue</option>
+					 		<option value="green">Green</option>
+					 		<option value="yellow">Yellow</option>
+						</select> 
+					</p>
 
-<input type="radio" name="size" id="size1" value="S"> Small<br>
-<input type="radio" name="size" id="size2" value="M"> Medium<br>
-<input type="radio" name="size" id="size3" value="L"> Large<br>
-<input type="radio" name="size" id="size4" value="XL"> X-Large<br>
+					<p>
+						<label><input type="radio" name="size" id="size1" value="S" /> Small</label>
+						<label><input type="radio" name="size" id="size2" value="M" /> Medium</label>
+						<label><input type="radio" name="size" id="size3" value="L" /> Large</label>
+						<label><input type="radio" name="size" id="size4" value="XL" /> X-Large</label>
+					</p>
 
-<input type="button" value="Order" id="submit" onclick="order();"> </input>
+					<p><input type="button" value="Order" id="submit" onclick="order();"> </input></p>
+				</form>
 
-</form>
-
+				<!-- May want to change to a div -->
+				<h2>Description</h2>
+				<p>These shirts are very shirty.  They are the shirtiest shirts of any shirt that any shirtmaker in the history of shirtmaking has ever crafted.</p>
+			</div>
+		</div>
+		<hr />
+		<div id="productspecs">
+			<h2>Product Specs</h2>
+			<table>
+				<caption></caption>
+				<thead>
+					<tr>
+						<th width="20%">&nbsp;</th>
+						<th width="20%">Orange</th>
+						<th width="20%">Blue</th>
+						<th width="20%">Green</th>
+						<th width="20%">Yellow</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th>Product Dimensions</th>
+						<td>13 x 8 x 1 inches</td>
+						<td>12 x 7 x 0 inches</td>
+						<td>15 x 5 x 5 inches</td>
+						<td>22 x 2 x 2 inches</td>
+					</tr>
+					<tr>
+						<th>Shipping Weight</th>
+						<td>1 pounds</td>
+						<td>2 pounds</td>
+						<td>15 pounds</td>
+						<td>1 pounds</td>
+					</tr>
+					<tr>
+						<th>Barcode</th>
+						<td>B00B81I4IP</td>
+						<td>B00B81E4IO</td>
+						<td>B00B81A4IR</td>
+						<td>B00B81T4IK</td>
+					</tr>
+					<tr>
+						<th>Item model number</th>
+						<td>FTL-4A3001C</td>
+						<td>STL-4B3001A</td>
+						<td>FTP-4I3001R</td>
+						<td>FRT-4G3001P</td>
+					</tr>
+					<tr>
+						<th>Date first available</th>
+						<td>May 7, 1979</td>
+						<td>May 7, 1980</td>
+						<td>May 7, 1981</td>
+						<td>Feb 29, 2016</td>
+					</tr>
+					<tr>
+						<th>Domestic Shipping</th>
+						<td>This item is also available for shipping to select countries outside the U.S.</td>
+						<td>This item is also available for shipping to select countries outside the U.S.</td>
+						<td>This item is not eligible for domestic shipping.</td>
+						<td>This item is also available for shipping to select countries outside the U.S.</td>
+					</tr>
+					<tr>
+						<th>International Shipping</th>
+						<td>This item is not eligible for international shipping.</td>
+						<td>This item is not eligible for international shipping.</td>
+						<td>This item is not eligible for international shipping.</td>
+						<td>This item is not eligible for international shipping.</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<hr />
+		<div id="reviews">
+			<h2>Reviews</h2>
+			<form method="post" action="">
+				<p>
+					<label for="reviewer">Name</label>
+					<input type="text" id="reviewer" name="reviewer" placeholder="Name" />
+				</p>
+				<p>
+					<label for="rating">Rating</label>
+					<select id="rating" name="rating">
+						<option value="10">10 - Outstanding.</option>
+						<option value="9">9 - Excellent.</option>
+						<option value="8">8 - Very good.</option>
+						<option value="7">7 - Good.</option>
+						<option value="6">6 - Fair.</option>
+						<option value="5">5 - Average.</option>
+						<option value="4">4 - Below average.</option>
+						<option value="3">3 - Poor.</option>
+						<option value="2">2 - Very poor.</option>
+						<option value="1">1 - Defies description.</option>
+					</select>
+				</p>
+				<p>
+					<label for="comments">Comments</label>
+					<textarea name="comments" id="comments"></textarea>
+				</p>
+				<p><input type="submit" value="Post Review" /></p>
+			</form>
+			<ul id="reviews">
+				<li class="review">
+					<h3>Harry Henderson</h3>
+					<p class="rating">8 - Very good.</p>
+					<p class="comment">They weren't kidding when they said these were the shirtiest shirts!  I had my doubts when I placed my order--I've been disappointed with the shirtiness of shirts before--but these guys really came through.</p>
+				</li>
+				<li class="review">
+					<h3>Bruce Banner</h3>
+					<p class="rating">1 - Defies description.</p>
+					<p class="comment">I haven't received my shirts yet, so as far as the shirtiness of the shirts goes I'd have to say they aren't very shirty at all.  There is no shirt!  I just want my shirty shirt and I'm angry that I don't have it yet.  You won't like me when I'm angry...</p>
+				</li>
+			</ul>
+		</div>
+	</div><!--END #content-->
+	<div id="footer">
+		<div class="twothird">
+			<h2>About Shirty Shirts</h2>
+			<p></p>
+			<hr />
+			<p>&copy; Copyright 2016 by Shirty Shirts, LLC. All Rights Reserved.</p>
+		</div>
+		<div class="onethird">
+			<h2>Shirty Shirts Newsletter</h2>
+			<p>Keep up on our always evolving product features and technology. Enter your e-mail and subscribe to our newsletter.</p>
+			<form method="post">
+				<input type="text" name="email" id="email" />
+				<input type="submit" value="Subscribe" />
+			</form>
+		</div>
+	</div><!--END #footer-->
+</div><!--END #sitewrapper-->
+<div id="wrappershadow"></div>
 </body>
 
 
