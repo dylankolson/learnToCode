@@ -9,6 +9,8 @@
 	<title>ACES' Learn to Code Store</title>
 
 	<link rel="stylesheet" type="text/css" href="style/style.css" />
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<script src="js/javascript.js"></script>
 </head>
 
@@ -26,10 +28,10 @@
 				<h1>Plain Colored T-Shirts </h1>
 
 				<form id="addToCart">
-					<p id="price">$14.99</p>
+					<h2 id="price">$14.99</h2>
 					<p>
-						<label for="num">Number of shirts:</label>
-						<input type="text" id="num" name="num" />
+						<label for="num">Quantity:</label>
+						<input type="text" id="num" name="num" size="5" />
 					</p>
 					<p>
 						<label for="color">Color:</label>
@@ -42,13 +44,16 @@
 					</p>
 
 					<p>
-						<label><input type="radio" name="size" id="size1" value="S" /> Small</label>
-						<label><input type="radio" name="size" id="size2" value="M" /> Medium</label>
-						<label><input type="radio" name="size" id="size3" value="L" /> Large</label>
-						<label><input type="radio" name="size" id="size4" value="XL" /> X-Large</label>
+						<label for="size">Size:</label>
+						<span class="oneline">
+							<label><input type="radio" name="size" id="size1" value="S" /> Small</label>
+							<label><input type="radio" name="size" id="size2" value="M" /> Medium</label>
+							<label><input type="radio" name="size" id="size3" value="L" /> Large</label>
+							<label><input type="radio" name="size" id="size4" value="XL" /> X-Large</label>
+						</span>
 					</p>
 
-					<p><input type="button" value="Order" id="submit" onclick="order();"> </input></p>
+					<p><input type="button" value="Order" id="submit" class="bigButton" onclick="order();" /></p>
 				</form>
 
 				<!-- May want to change to a div -->
@@ -60,7 +65,6 @@
 		<div id="productspecs">
 			<h2>Product Specs</h2>
 			<table>
-				<caption></caption>
 				<thead>
 					<tr>
 						<th width="20%">&nbsp;</th>
@@ -126,7 +130,7 @@
 		<hr />
 		<div id="reviews">
 			<h2>Reviews</h2>
-			<form method="post" action="">
+			<form method="post" id="reviewform">
 				<p>
 					<label for="reviewer">Name</label>
 					<input type="text" id="reviewer" name="reviewer" placeholder="Name" />
@@ -148,9 +152,9 @@
 				</p>
 				<p>
 					<label for="comments">Comments</label>
-					<textarea name="comments" id="comments"></textarea>
+					<textarea name="comments" id="comments" cols="50" rows="5"></textarea>
 				</p>
-				<p><input type="submit" value="Post Review" /></p>
+				<p><input type="submit" id="postReview" value="Post Review" class="bigButton" /></p>
 			</form>
 			<ul id="reviews">
 				<li class="review">
@@ -169,7 +173,7 @@
 	<div id="footer">
 		<div class="twothird">
 			<h2>About Shirty Shirts</h2>
-			<p></p>
+			<p>Shirty Shirts, LLC. is a small, employee-owned business that was founded in 2016 with primary offices in Maryland.</p>
 			<hr />
 			<p>&copy; Copyright 2016 by Shirty Shirts, LLC. All Rights Reserved.</p>
 		</div>

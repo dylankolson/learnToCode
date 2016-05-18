@@ -63,12 +63,47 @@ h1, h2, h3 {
 .review {
 	border-bottom: 1px solid #738A84;
 }
-.review:last-child {
-	border-bottom: none;
-}
 #productspecs table {
 	width: 100%;
 }
 #productspecs table th {
 	text-align: left;
+}
+#content form {
+	background-color: #efefef;
+	border: 1px solid #738A84;
+	border-radius: 10px;
+	padding: 0 1em;
+}
+#content form p > label {
+	display: inline-block;
+	width: 75px;
+}
+#content form p > textarea {
+	vertical-align: top;
+}
+.bigButton {
+	font-size: 16px;
+	font-weight: bold;
+	padding: 0.5em 1em;
+	background-color: #53CA9F;
+	border: 1px solid #60AC90;
+	border-radius: 10px;
+	color: #fff;
+	cursor: pointer;
+}
+.bigButton:hover {
+	background-color: #738A84;
+	border: 1px solid #2D3037;
+}
+table {
+	border: 0;
+	border-collapse: collapse;
+}
+table td, table th {
+	padding: 0.3em;
+	vertical-align: top;
+}
+table tbody tr.striped {
+	background-color: #CFE1D0;
 }
