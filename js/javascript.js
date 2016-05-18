@@ -19,3 +19,28 @@ var x = document.getElementById('color').selectedIndex;
 var color = document.getElementsByTagName("option")[x].value
 alert(num + " " + size +" " + color);
 }
+
+$(document).ready(function() {
+	//Add stripes to the table
+	$('table tr:odd').addClass('striped');
+
+	//Review Form
+	$('#postReview').on('click',function(e) {
+		e.preventDefault();
+
+		if ($('#reviewer').val() != '' && $('#comments').val() != '') {
+			var copy = $('.review:first').clone();
+			copy.find('.rating').text($('#rating option:selected').text());
+			copy.find('h3').text($('#reviewer').val());
+			copy.find('.comment').text($('#reviewform #comments').val());
+
+			$('#reviews').append(copy);
+
+			$('#reviewer').val('');
+			$('#comments').val('');
+			$('#rating option').prop('selected',false);
+		} else {
+			alert('Please provide a name and some comments');
+		}
+	});
+});
