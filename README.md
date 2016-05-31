@@ -1,4 +1,2 @@
 # learnToCode 
-.docx has the steps to complete <br>
-download and a zip and unzip to get started!
-
+Final Vsersion - https://github.com/acesinc/training-conference-notes/wiki/HTML,%20JavaScript,%20CSS
