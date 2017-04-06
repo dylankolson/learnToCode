@@ -1,2 +1,2 @@
 # learnToCode 
-Final Vsersion - https://github.com/acesinc/training-conference-notes/wiki/HTML,%20JavaScript,%20CSS
+Final Version - https://github.com/acesinc/training-conference-notes/wiki/HTML,%20JavaScript,%20CSS
